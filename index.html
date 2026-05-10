@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md. Rezwanul Islam — Future Computer Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- SOCIAL SIDEBAR -->
+  <div class="social-bar">
+    <a href="https://www.linkedin.com/in/md-rezwanul-islam-/" target="_blank" class="social-btn" title="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7H10V9h4v2a6 6 0 016-3zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://github.com/rezwanulislam2026" target="_blank" class="social-btn" title="GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+    </a>
+    <a href="https://www.facebook.com/md.rezwanul.sarkar" target="_blank" class="social-btn" title="Facebook">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+    </a>
+    <a href="https://codeforces.com/profile/rezwanul_islam" target="_blank" class="social-btn" title="Codeforces">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 2h3v20H4zM10.5 9h3v13h-3zM17 6h3v16h-3z"/></svg>
+    </a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo"><span>//</span> Md. Rezwanul Islam</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Computer Engineer · CSE · Varendra University</div>
+      <h1 class="hero-name">
+        <span class="line1">Md. Rezwanul</span>
+        <span class="line2">Islam</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="highlight">Computer Engineer </span><br/>
+        BSc in CSE @ Varendra University · Graduating <span class="highlight">June 2027</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary"><span>View My Work</span> <span>→</span></a>
+        <a href="#contact" class="btn-secondary">Let's Connect <span>↗</span></a>
+      </div>
+    </div>
+
+    <!-- PHOTO: Replace 'your-photo.jpg' with your actual image filename -->
+    <div class="hero-photo-wrap">
+      <div class="photo-frame">
+        <div class="photo-inner" id="photoInner">
+          <img src="Rezwanul_Islam.jpg" alt="Md. Rezwanul Islam" id="profilePhoto"
+            onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';" />
+          <div class="photo-placeholder" id="photoFallback" style="display:none;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <div>Add your photo filename<br/>in index.html line ~57</div>
+          </div>
+        </div>
+        <div class="photo-corner tl"></div>
+        <div class="photo-corner tr"></div>
+        <div class="photo-corner bl"></div>
+        <div class="photo-corner br"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS TICKER -->
+  <div class="stats-ticker-wrap">
+    <div class="stats-ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-item"><span class="ticker-num">2027</span><span class="ticker-label">Graduation Year</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">3+</span><span class="ticker-label">Years of Coding</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">10+</span><span class="ticker-label">Projects Built</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">5+</span><span class="ticker-label">Tech Stacks</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">CSE</span><span class="ticker-label">Varendra University</span></div>
+        <div class="ticker-sep">✦</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="ticker-item"><span class="ticker-num">2027</span><span class="ticker-label">Graduation Year</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">3+</span><span class="ticker-label">Years of Coding</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">10+</span><span class="ticker-label">Projects Built</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">5+</span><span class="ticker-label">Tech Stacks</span></div>
+        <div class="ticker-sep">✦</div>
+        <div class="ticker-item"><span class="ticker-num">CSE</span><span class="ticker-label">Varendra University</span></div>
+        <div class="ticker-sep">✦</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-tag">01 — About Me</div>
+    <h2 class="section-title reveal">A developer who loves<br/><em>building the future.</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi, I'm <strong>Md. Rezwanul Islam</strong> — an undergraduate student pursuing a BSc in <strong>Computer Science and Engineering</strong> at <strong>Varendra University</strong>, Bangladesh.</p>
+        <p>I'm passionate about software development, problem solving, and building meaningful digital experiences. From clean backend logic to polished UIs, I enjoy every part of the development cycle.</p>
+        <p>Expected to graduate in <strong>June 2027</strong>, I'm actively building skills, working on real-world projects, and seeking opportunities to grow as a <strong>Computer Engineer</strong> and <strong>Software Engineer</strong>.</p>
+        <p>When I'm not coding, I enjoy exploring new technologies, contributing to open source, and competitive programming.</p>
+        <div class="hero-cta" style="margin-top:32px">
+          <a href="#contact" class="btn-primary"><span>Hire Me</span></a>
+          <a href="https://github.com/rezwanulislam2026" target="_blank" class="btn-secondary">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-year">2023 — Now</div>
+          <div class="timeline-content"><h4>BSc in CSE</h4><p>Varendra University, Rajshahi. Graduating June 2027.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content"><h4>Started Serious Dev Journey</h4><p>Full-stack web apps and deep dives into data structures & algorithms.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content"><h4>Competitive Programming</h4><p>Started competitive programming on <a href="https://codeforces.com/profile/rezwanul_islam" target="_blank" style="color:var(--accent);text-decoration:none;">Codeforces</a> — solving algorithmic problems and improving problem-solving skills.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-content"><h4>Open Source & Projects</h4><p>Building projects that solve real problems and exploring ML/Deep Learning.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026 — Now</div>
+          <div class="timeline-content"><h4>Actively Seeking Opportunities</h4><p>Internships, freelance work, and collaborations as a Computer & Software Engineer.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-tag">02 — Technical Skills</div>
+    <h2 class="section-title reveal">What I work<br/><em>with.</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">💻</span>
+        <h3>Programming Languages</h3>
+        <p>Core languages for algorithms, system design, and application development.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">🌐</span>
+        <h3>Web Development</h3>
+        <p>Building modern, responsive web applications from front to back.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React</span><span class="skill-tag">Node.js</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">🗄️</span>
+        <h3>Databases</h3>
+        <p>Designing and querying relational and non-relational databases efficiently.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">SQLite</span><span class="skill-tag">Firebase</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">🛠️</span>
+        <h3>Tools & Platforms</h3>
+        <p>Version control, dev environments, and collaboration tools.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">VS Code</span><span class="skill-tag">Linux</span><span class="skill-tag">Postman</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">🧠</span>
+        <h3>CS Fundamentals</h3>
+        <p>Strong theoretical foundation for practical engineering decisions.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span><span class="skill-tag">OOP</span><span class="skill-tag">OS</span><span class="skill-tag">Networking</span><span class="skill-tag">DBMS</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">📊</span>
+        <h3>Machine Learning</h3>
+        <p>Building intelligent systems that learn from data to make smart predictions.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Scikit-learn</span><span class="skill-tag">NumPy</span><span class="skill-tag">Pandas</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Regression</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">🧬</span>
+        <h3>Deep Learning</h3>
+        <p>Designing and training neural networks for image recognition, NLP, and more.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">TensorFlow</span><span class="skill-tag">Keras</span><span class="skill-tag">PyTorch</span><span class="skill-tag">CNN</span><span class="skill-tag">RNN</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">🗣️</span>
+        <h3>English Communication</h3>
+        <p>Strong English speaking and writing for professional and technical environments.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Public Speaking</span><span class="skill-tag">Tech Writing</span><span class="skill-tag">Presentations</span><span class="skill-tag">Professional</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">📱</span>
+        <h3>Currently Learning</h3>
+        <p>Expanding expertise into emerging, high-demand technologies.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Next.js</span><span class="skill-tag">Docker</span><span class="skill-tag">LLMs</span><span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-tag">03 — Projects</div>
+    <h2 class="section-title reveal">Things I've<br/><em>built.</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-img">🛒🐄🍅🫘🥬 <div class="project-num">01</div></div>
+        <div class="project-body">
+          <div class="project-label">Full Stack</div>
+          <h3>E-Commerce Agro Firm Platform</h3>
+          <p>A complete e-commerce app RIPrime Agro with product listing, cart, authentication, and order management.</p>
+          <div class="project-techs">
+            <span class="tech-badge">React</span><span class="tech-badge">Node.js</span><span class="tech-badge">MongoDB</span><span class="tech-badge">Express</span>
+          </div>
+          <div class="project-links"><a href="https://rezwanulislam2026.github.io/RIPrime-Agro/" target="_blank" class="project-link">Website →</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img">📚<div class="project-num">02</div></div>
+        <div class="project-body">
+          <div class="project-label">Web App</div>
+          <h3>Student Management System</h3>
+          <p>University system for student records, results, attendance, and admin dashboard.</p>
+          <div class="project-techs">
+            <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">HTML/CSS</span><span class="tech-badge">Bootstrap</span>
+          </div>
+          <div class="project-links"><a href="https://github.com/YOUR-GITHUB" target="_blank" class="project-link">GitHub →</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img">🤖<div class="project-num">03</div></div>
+        <div class="project-body">
+          <div class="project-label">Python · ML</div>
+          <h3>Sentiment Analyzer</h3>
+          <p>NLP-based tool to classify text as positive, negative, or neutral using machine learning.</p>
+          <div class="project-techs">
+            <span class="tech-badge">Python</span><span class="tech-badge">NLP</span><span class="tech-badge">Flask</span><span class="tech-badge">NLTK</span>
+          </div>
+          <div class="project-links"><a href="https://github.com/YOUR-GITHUB" target="_blank" class="project-link">GitHub →</a></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-tag">04 — Contact</div>
+    <h2 class="section-title reveal">Let's work<br/><em>together.</em></h2>
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <p>I'm looking for internship opportunities, freelance projects, and collaborations. If you have something in mind — or just want to say hi — my inbox is always open.</p>
+        <div class="contact-links">
+          <a href="md.prime2021@gmail.com" class="contact-link-item">
+            <div class="cli-icon">✉️</div>
+            <div class="cli-meta"><span class="cli-type">Email</span><span class="cli-label">md.prime2021@gmail.com</span></div>
+            <span class="cli-arrow">↗</span>
+          </a>
+          <a href="8801827282702" target="_blank" class="contact-link-item">
+            <div class="cli-icon">📱</div>
+            <div class="cli-meta"><span class="cli-type">Phone / WhatsApp</span><span class="cli-label">+880 1827-282702</span></div>
+            <span class="cli-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/md-rezwanul-islam-/" target="_blank" class="contact-link-item">
+            <div class="cli-icon">💼</div>
+            <div class="cli-meta"><span class="cli-type">LinkedIn</span><span class="cli-label">linkedin.com/in/YOUR-LINKEDIN</span></div>
+            <span class="cli-arrow">↗</span>
+          </a>
+          <a href="https://github.com/rezwanulislam2026" target="_blank" class="contact-link-item">
+            <div class="cli-icon">🐙</div>
+            <div class="cli-meta"><span class="cli-type">GitHub</span><span class="cli-label">github.com/YOUR-GITHUB</span></div>
+            <span class="cli-arrow">↗</span>
+          </a>
+          <a href="https://www.facebook.com/md.rezwanul.sarkar" target="_blank" class="contact-link-item">
+            <div class="cli-icon">🔵</div>
+            <div class="cli-meta"><span class="cli-type">Facebook</span><span class="cli-label">facebook.com/YOUR-FACEBOOK</span></div>
+            <span class="cli-arrow">↗</span>
+          </a>
+          <a href="https://codeforces.com/profile/rezwanul_islam" target="_blank" class="contact-link-item">
+            <div class="cli-icon">🏆</div>
+            <div class="cli-meta"><span class="cli-type">Codeforces</span><span class="cli-label">codeforces.com/profile/rezwanul_islam</span></div>
+            <span class="cli-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fname">YOUR NAME</label>
+            <input type="text" id="fname" placeholder="Your name" required/>
+          </div>
+          <div class="form-group">
+            <label for="femail">EMAIL ADDRESS</label>
+            <input type="email" id="femail" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">SUBJECT</label>
+            <input type="text" id="fsubject" placeholder="What's this about?"/>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">MESSAGE</label>
+            <textarea id="fmessage" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">SEND MESSAGE →</button>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">© 2025 Md. Rezwanul Islam. All rights reserved.</div>
+    <div class="footer-made">Designed & Built by <span>Rezwanul</span> · Computer Engineer & Software Engineer</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
